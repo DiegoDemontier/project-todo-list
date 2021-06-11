@@ -9,6 +9,8 @@
 
 body {
   background-color: rgb(76, 94, 94);
+  width: 100%;
+  height: 100%;
 }
 
 .completed {
@@ -64,6 +66,23 @@ body {
   max-width: 560px;
   margin: 0 auto;
   justify-content: center;
+}
+
+.navButton {
+  display: flex;
+}
+
+@media (max-width: 560px) {
+  .navButton {
+    align-items: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .main {
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .tarefas {
